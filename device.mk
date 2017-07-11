@@ -162,9 +162,6 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
-LOCAL_SHARED_LIBRARIES += \
-    libqdutils
-
 # Doze mode
 PRODUCT_PACKAGES += \
     OneplusDoze
