@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 
 # Inherit some common MK stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+$(call inherit-product, vendor/beanstalk/config/common_full_phone.mk)
 
-PRODUCT_NAME := mk_cheeseburger
+PRODUCT_NAME := bs_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -32,15 +32,9 @@ PRODUCT_MODEL := ONEPLUS A5000
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-TARGET_VENDOR_PRODUCT_NAME := OnePlus5
-TARGET_VENDOR_DEVICE_NAME := OnePlus5
-
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5 PRODUCT_NAME=OnePlus5
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:7.1.1/NMF26X/06241119:user/release-keys
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=cheeseburger-dev
 
 TARGET_VENDOR := oneplus
