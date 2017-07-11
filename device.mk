@@ -160,7 +160,9 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8998 \
     memtrack.msm8998 \
     liboverlay \
-    libtinyxml \
+    libtinyxml
+
+LOCAL_SHARED_LIBRARIES += \
     libqdutils
 
 # Doze mode
