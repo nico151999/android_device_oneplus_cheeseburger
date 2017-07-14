@@ -93,7 +93,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 BOARD_PROVIDES_AUDIO_HAL := true
 BOARD_AUDIO_HAL_PATH := $(PLATFORM_PATH)/audio
 AUDIO_FINE_TUNED_OPTIMIZATIONS := true
-include audio/configs/msm8998/msm8998.mk
+include $(PLATFORM_PATH)/audio/configs/msm8998/msm8998.mk
 
 AUDIO_FINE_TUNED_OPTIMIZATIONS := true
 TARGET_BUILD_OP5_AUDIO := true
